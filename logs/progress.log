@@ -1,0 +1,44 @@
+---
+Grocery Store Simulation Progress Log
+---
+
+Milestones Completed:
+1. Project structure organized with /src, /assets, /public, /logs, etc.
+2. Three.js scene set up with camera, lighting, and renderer.
+3. Realistic grocery store layout: perimeter walls, aisles, bakery, deli, restrooms, warehouse, and self-checkout area.
+4. Navigation controls: WASD to move, Q/E to move up/down, arrow keys to look, Shift for speed boost.
+5. Worker and customer agents added to the scene.
+6. Store entrance and self-checkout area implemented.
+7. Customer agents now enter, wander aisles, check out, and exit with pathfinding, queueing, and collision logic.
+8. Worker agents hover near self-checkout counters.
+9. Camera view optimized for a clear, centered, downward angle.
+10. Project logic modularized into agentController, pathfinding, and fixtureLoader modules.
+11. Customers pick up baskets, browse dynamically throughout the store, and return baskets.
+12. Interactive customer stats: click any customer to view a real-time stats card (time in store, money, mood, shopping list, etc.).
+13. Stats overlay displays live data for all customers.
+14. Shopping lists are now distributed evenly across all aisles, and each item is associated with a specific aisle.
+15. Customers' waypoints are generated to visit the correct aisles for their shopping list.
+16. A 'clue' mechanic ensures customers find their items as time passes at an aisle, preventing them from getting lost.
+17. Stats overlay now has a Show/Hide button and is hidden by default.
+18. Customer stats card and overlay always display item names and aisles, never [object Object].
+19. MB Stats panel at the bottom left shows FPS, agent count, and memory usage.
+
+Current State:
+- Customers have unique shopping lists with items mapped to specific aisles, and their browsing covers the full store.
+- Customers are guided by a clue mechanic to ensure they find their items and don't get lost.
+- Stats overlay is user-toggleable and hidden by default; stats card and overlay always show item names and aisles.
+- MB Stats panel provides real-time FPS, agent count, and memory usage.
+- Codebase is modular and ready for further expansion.
+
+Pending/Next Steps:
+- Implement item pickup and basket return logic.
+- Add more agent behaviors (shopping lists, mood effects, etc.).
+- Visual improvements: 3D models for agents, shelves, counters, and items.
+- UI/UX enhancements for stats and controls.
+- Performance optimization for larger agent counts.
+- Prepare for deployment (Netlify, asset optimization).
+- Add sound effects or background music for immersion.
+- Save/load simulation state or session logs.
+
+---
+Last updated: [auto-generated, after stats overlay and clue mechanic milestone] 
