@@ -21,7 +21,7 @@ A modular, interactive 3D grocery store simulation built with Vite and Three.js.
 
 ## Project Structure
 ```
-bizsim/
+grocerystoresim/
   ├── public/           # Static assets (SVGs, images, etc.)
   ├── src/
   │   ├── agents/       # Agent classes and logic
