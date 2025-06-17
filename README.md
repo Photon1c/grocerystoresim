@@ -2,7 +2,7 @@
 
 *A Three.js implementation of a grocery store operation using modularized JavaScript files with an HTML frontend and stats panel GUI overlays.*  
 
-![sample](media/sample.GIF)
+![sample](media/sample.gif)
 
 A modular, interactive 3D grocery store simulation built with Vite and Three.js. Simulates customer and worker agents, dynamic shopping behaviors, collision detection, and real-time stats tracking.
 
