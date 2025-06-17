@@ -54,7 +54,7 @@ export function renderStatsOverlay(customers) {
     statsToggleBtn.style.position = 'fixed';
     statsToggleBtn.style.top = '10px';
     statsToggleBtn.style.right = '10px';
-    statsToggleBtn.style.zIndex = 1001;
+    statsToggleBtn.style.zIndex = '1001';
     statsToggleBtn.style.padding = '6px 16px';
     statsToggleBtn.style.background = '#222';
     statsToggleBtn.style.color = '#fff';
@@ -69,6 +69,24 @@ export function renderStatsOverlay(customers) {
       statsToggleBtn.textContent = statsVisible ? 'Hide Stats' : 'Show Stats';
     });
     document.body.appendChild(statsToggleBtn);
+    // Add Git link below
+    const gitLink = document.createElement('a');
+    gitLink.href = 'https://github.com/Photon1c/grocerystoresim';
+    gitLink.target = '_blank';
+    gitLink.textContent = 'Git';
+    gitLink.style.position = 'fixed';
+    gitLink.style.top = '46px';
+    gitLink.style.right = '18px';
+    gitLink.style.zIndex = '1001';
+    gitLink.style.fontSize = '0.98em';
+    gitLink.style.color = '#1976d2';
+    gitLink.style.background = 'none';
+    gitLink.style.border = 'none';
+    gitLink.style.textDecoration = 'underline';
+    gitLink.style.cursor = 'pointer';
+    gitLink.style.fontFamily = 'system-ui, sans-serif';
+    gitLink.style.fontWeight = 'bold';
+    document.body.appendChild(gitLink);
   }
   if (!statsVisible) {
     statsDiv.style.display = 'none';
